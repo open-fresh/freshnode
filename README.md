@@ -2,7 +2,7 @@
 
 [Grafana](https://grafana.com/) application that contains a dashboard to demonstrate concepts for creating panel plugins with [React](https://reactjs.org/).
 
-This project is an experiment to extend Grafana with simple plugin APIs for sharing data and dynamically updating dashboard definitions based on user actions and data payload. The plugin implements the following features:  
+This project is an experiment to extend Grafana with simple plugin APIs for sharing data and dynamically updating dashboard definitions based on user actions and data payload. This functionality enables Grafana to be used as an application development platform. The plugin implements the following features:  
 
 * extendable base class controller for rendering panel content with React
 * pluggable React components
@@ -189,7 +189,3 @@ describe('Debug cmp', () => {
   });
 });
 ```
-
-### Shared libraries
-
-The code for each plugin is loaded on-demand at runtime. Code that is shared between plugins is located in the `src/lib` directory and must be exported in `src/lib/sdk.js`. Exported code is packaged with webpack configured in `src/lib/webpack.config.js`, and can be imported from a plugin like this: `import { React, FtUtil } from '../ft-sdk/sdk'`.
