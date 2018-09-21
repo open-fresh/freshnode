@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Favicon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Favicon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, 5.000000)">
+            <polygon id="Polygon" fill="#2196F3" points="47.7575758 0.341747206 63.3926898 27.4296455 47.635114 54.5878983 16.2424242 54.6582528 0.607310249 27.5703545 16.364886 0.412101673"></polygon>
+            <path d="M30.6249846,30.2409871 L21.683879,30.2409871 L21.683879,39.5614035 L16.4848485,39.5614035 L16.4848485,16.4035088 L32.1892947,16.4035088 L32.1892947,20.5388471 L21.683879,20.5388471 L21.683879,26.1056487 L30.6249846,26.1056487 L30.6249846,30.2409871 Z M50.4242424,20.5388471 L44.5350751,20.5388471 L44.5350751,39.5614035 L39.3360446,39.5614035 L39.3360446,20.5388471 L33.4928864,20.5388471 L33.4928864,16.4035088 L50.4242424,16.4035088 L50.4242424,20.5388471 Z" id="FT" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

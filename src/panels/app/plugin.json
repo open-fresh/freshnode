@@ -1,0 +1,42 @@
+{
+  "type": "app",
+  "name": "FreshTracks",
+  "id": "freshtracks-app",
+
+  "routes": [
+  ],
+
+  "info": {
+    "description": "FreshTracks app contains FreshTracks pages, dashboards, and plugins",
+    "author": {
+      "name": "FreshTracks",
+      "url": "https://freshtracks.io/"
+    },
+    "keywords": ["freshtracks", "react"],
+    "logos": {
+      "small": "images/FT-Icon.svg",
+      "large": "images/FT-Logo.svg"
+    },
+    "links": [
+      {"name": "FreshTracks", "url": "https://freshtracks.io/"}
+    ],
+    "screenshots": [],
+    "version": "0.1.0",
+    "updated": "2018-09-19"
+  },
+
+  "includes": [
+    {
+      "type": "dashboard",
+      "name": "React Panels",
+      "path": "dashboards/react-panels.json",
+      "addToNav": true,
+      "defaultNav": true
+    }
+  ],
+
+  "dependencies": {
+    "grafanaVersion": "5.0+",
+    "plugins": []
+  }
+}

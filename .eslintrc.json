@@ -1,0 +1,45 @@
+{
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "extends": ["airbnb-base", "plugin:flowtype/recommended"],
+    "globals": {
+        "window": true,
+        "document": true
+    },
+    "parser": "babel-eslint",
+    "plugins": ["flowtype", "jest", "react"],
+    "rules": {
+        "arrow-body-style": 0,
+        "class-methods-use-this": 0,
+        "comma-dangle": 0,
+        "default-case": 0,
+        "flowtype/define-flow-type": 1,
+        "flowtype/use-flow-type": 1,
+        "func-names": 0,
+        "import/no-unresolved": [2, { "ignore": ["app/core", "app/plugins/sdk", "app/core/utils/kbn", "app/core/utils/ticks", "../lib/d3/d3.min", "./styles.css!", "../lib/qs/qs.js", "/public/plugins/ft-sdk/sdk", "\/Ctrl$", "\/sdk$"] }],
+        "import/no-extraneous-dependencies": 0,
+        "import/extensions": 0,
+        "import/prefer-default-export": 0,
+        "import/no-webpack-loader-syntax": 0,
+        "max-len": 0,
+        "new-cap": [2, {"newIsCapExceptions": ["Promise.all"]}],
+        "no-mixed-operators": 0,
+        "no-multi-assign": 0,
+        "no-param-reassign": [2, {"props": false}],
+        "no-plusplus": 0,
+        "no-prototype-builtins": 0,
+        "no-return-assign": 0,
+        "no-use-before-define": 0,
+        "no-useless-constructor": 0,
+        "react/jsx-uses-react": 2,
+        "react/jsx-uses-vars": 2,
+        "react/react-in-jsx-scope": 2,
+        "space-infix-ops": 0
+    }
+}

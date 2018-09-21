@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+.ft-page {
+  color: #37474F;
+  font-size: 16px;
+}
+
+.ft-page p {
+  margin: 14px 0 7px;
+}
+
+.ft-page h1,
+.ft-page h2,
+.ft-page h3,
+.ft-page h4,
+.ft-page h5,
+.ft-page h6 {
+  color: #546e7a;
+  font-weight: 200;
+}
+
+.ft-page .click-event {
+  cursor: pointer;
+}
+
+.ft-page .select-with-icon:after {right: 30px;}
+
+.ft-page .btn-info {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.ft-page .btn-success {
+  background-color: #8bc34a;
+  background-image: none;
+  text-shadow: none;
+}
+
+.ft-page .gf-form {
+  margin-bottom: 10px;
+}
+
+.ft-page .gf-form-group {
+  margin-bottom: 20px;
+}
+
+.theme-light .ft-page .tab-header {
+  background-color: #f7f8fa;
+}
+
+.ft-page .tab-header {
+  display: flex;
+}
+
+.ft-page .gf-tabs-link {
+  font-size: 14px;
+  background: #eceff1;
+  border-radius: 2px;
+  padding: 6px 39px;
+}
+
+.ft-page .gf-tabs-link.active {
+  background-color: #fff;
+  border: 0;
+}
+.ft-page .gf-tabs-link.active::before {
+  display: none;
+}
+
+.ft-page .tab-container {
+  background-color: #fff;
+  margin-top: 2.5rem;
+}
+
+.ft-page .tab-contents {
+  justify-content: left;
+  padding: 3px 8px;
+}
+
+.ft-installation pre {
+  background-color: inherit;
+  border: 0;
+  display: flex;
+  margin: 0;
+  overflow: hidden;
+  padding: 1.4rem 1rem 0;
+  margin-bottom: .7em;
+}
+
+.ft-installation pre button {
+  height: 2.5em;
+  margin-right: 10px;
+  word-break: normal;
+}
+
+.ft-installation pre code {
+  display: block;
+  line-height: 2em;
+  padding: .8em 0 0 1.5em;
+  position: relative;
+  text-indent: -1.5em;
+}
+
+.ft-installation pre code::before {
+  color: #555;
+  content: "\021AA \021AA \021AA \021AA \021AA \021AA \021AA";
+  font-size: 1.5em;
+  line-height:1.4em;
+  position: absolute;
+  text-indent: 0;
+  top: 1.7em;
+  width: 1em;
+}

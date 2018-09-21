@@ -1,0 +1,21 @@
+{
+  "type": "panel",
+  "name": "Fresh Tracks Plugin SDK",
+  "id": "ft-sdk",
+  "info": {
+    "description": "FreshTracks.io Plugin SDK",
+    "author": {
+      "name": "FreshTracks.io",
+      "url": "https://freshtracks.io"
+    },
+    "keywords": ["freshtracks"],
+    "links": [
+      {"name": "freshtracks.io", "url": "https://freshtracks.io"}
+    ]
+  },
+
+  "dependencies": {
+    "grafanaVersion": "5.x.x",
+    "plugins": [ ]
+  }
+}
