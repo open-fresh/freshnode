@@ -52,10 +52,9 @@ Note: light theme is recommended, since this experiment has not been style prope
 
 ### Viewing changes
 
-* Watch for dashboard changes: `npm run watch-dash`
 * Watch for plugin changes: `npm run watch-plugin`
 
-Both watch commands require browser refresh after build completes.
+Watch commands require browser refresh after build completes.
 
 ## React plugin development
 
