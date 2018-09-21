@@ -1,6 +1,6 @@
 # freshnode
 
-This [Grafana](https://grafana.com/) application contains a dashboard that demonstrates concepts for creating panel plugins with [React](https://reactjs.org/).
+[Grafana](https://grafana.com/) application that contains a dashboard to demonstrate concepts for creating panel plugins with [React](https://reactjs.org/).
 
 This project is an experiment to extend Grafana with simple plugin APIs for sharing data and dynamically updating dashboard definitions based on user actions and data payload. The plugin implements the following features:  
 
