@@ -58,6 +58,8 @@ Watch commands require browser refresh after build completes.
 
 ## React plugin development
 
+View the [src/panels/sdk/module.js file](src/panels/sdk/module.js) for an example class that extends `FtCtrl` and demonstrates the features documented below.
+
 ### Plugin creation
 
 All plugins extend `FtCtrl` and specify the react component to render with the `cmp` property.
@@ -156,11 +158,38 @@ class PanelCtrl extends FtCtrl {
 }
 ```
 
+### Dynamic dashboard layout
+
+Plugins can define a `mapStateToLayout` function to dynamically populate a Grafana dashboard based on the current shared app state. Plugins call the function `FtCtrl.layoutMap.set` to a define a layout function. The layout function must return an array of panel definition objects. Each layout function specifies a key name that the base controller uses to determine which dynamic layout to use, since only one layout can be used at a time. The dashboard defines a template variable with the name `panellayout` containing a string that matches a layout function key name, so that the active layout can be updated.
+
+```javascript
+function mapStateToLayout(ftState) {
+  return [
+    {
+      title: ftState.graphTitle,
+      type: 'graph',
+      targets: [
+        {
+          expr: ftState.graphQuery,
+          datasource: 'default',
+          format: 'time_series',
+          intervalFactor: 2,
+          legendFormat: 'series count',
+          step: 30
+        }
+      ]
+    },
+    // other panels...
+  ];
+}
+FtCtrl.layoutMap.set('ft-layout', mapStateToLayout);
+```
+
 ### Plugin tests
 
 The easiest way to test plugins is to test `mapStateToProps` and `mapStateToTargets` directly and leave rendering tests to the component. We will likely also need browser style integration tests at some point in the future.
-See `src/panel/sdk/__tests__/module.js` for an example plugin unit test.
 
+See `src/panel/sdk/__tests__/module.js` for an example plugin unit test.
 
 ```javascript
 describe('mah plugin', () => {
@@ -177,7 +206,8 @@ describe('mah plugin', () => {
 ### Component tests
 
 Test component rendering by rendering each component individually without it's parent plugin/controller.
-See `src/panel/sdk/cmp/__tests__/debug.js` for an example component unit test.
+
+See `src/panel/sdk/cmp/__tests__/debug.js`](src/panel/sdk/cmp/__tests__/debug.js)` for an example component unit test.
 
 ```javascript
 describe('Debug cmp', () => {
